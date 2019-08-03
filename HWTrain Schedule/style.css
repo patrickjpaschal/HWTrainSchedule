@@ -1,0 +1,57 @@
+html {
+  height: 100%;
+}
+body {
+  background-color: #996666;
+  flex-direction: column;
+  display: flex;
+}
+#page-container {
+  margin: auto;
+  max-width: 80%;
+  min-height: 100%;
+}
+.form-control {
+  margin: 0px;
+}
+#form-box {
+  border: 1px #cc9966 solid;
+  border-top-width: 35px;
+}
+#table-box {
+  border: 1px #cc9966 solid;
+  border-top-width: 35px;
+  width: 90%;
+  justify-content: space-evenly;
+  margin: 0px;
+}
+.jumbotron {
+  color: #666666;
+  background-color: #cccc99;
+}
+.btn {
+  background-color: rgb(136, 144, 182);
+}
+#local {
+  font-family: sans-serif;
+}
+.contents {
+  display: flex;
+ flex-direction:column;
+}
+#clock {
+  background-color: rgb(204, 204, 156);
+  height: 174px;
+}
+#lists {
+  background-color: #cc9999;
+}
+.button {
+  color: #cc9999;
+  background-color: #669966;
+}
+.form-control {
+  justify-content: space-around;
+  background-color: rgb(204, 204, 156);
+  color: rgb(9, 9, 12);
+}

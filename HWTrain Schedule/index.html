@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en"><head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    </head><script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+  <meta charset="utf-8">
+  
+ <body> 
+
+        
+                <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+              
+                <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+               
+             
+      <link rel="stylesheet" href="style.css">
+<div id="page-container">
+    <div class="jumbotron">
+            <h1 class="display-4-center">Train Depot</h1>
+            <p class="lead">We provide up to the minute schedule information on all of our trains. Please be aware of your upcoming train and make all boarding preperations. </p>
+            <hr class="my-4">
+            <p>Have a nice day and thank you for choosing to ride with MTS</p>
+        
+          </div>
+
+
+<span id ="local"> Your current local time is</span>
+<div id="contents">
+         <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=small&timezone=America%2FChicago" width="175px" height="150px" frameborder="5" seamless id ="clock"></iframe> 
+<div id="table-box">
+    <table class="table table-bordered table-dark" id = "list" style="background-color: rgb(204,204,156)">
+            <thead>
+              <tr class ="contents">
+                <th scope="col" class  ="nTrain11" id ="alll">Train Name</th>
+                <th scope="col" class = "dTrain11">Destination</th>
+                <th scope="col" class ="freqTrain11">Frequency(min)</th>
+                <th scope="col" class = "next11">Next Arrival</th>
+                <th scope="col" class ="mins11">Minutes Away</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" id ="trainInfo">Trenton Express</th>
+                <td id = "place">Trenton</td>
+                <td id= "amount">25</td>
+                <td id="nextOne">05:35 PM</td>
+                <td id="howLong">10</td>
+              </tr>
+              <tr>
+                <th scope='row' class= 'well'></th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                
+            </tr>
+           
+            </tbody>
+          </table>
+</div></div>
+<div id="form-box">
+          <form>
+                <div class="form-group">
+                        <input class="form-control" type="text" placeholder="Train Name" id= "nTrain">
+                </div>
+                <div class="form-group">
+                        <input class="form-control" type="text" placeholder="Destination" id="dTrain">
+                </div>
+                <div class="form-group">
+                        <input class="form-control" type="text" id="fTrain" placeholder="First Train Time (HH:MM-military time">
+                </div>
+                <div class="form-group">
+                        <input class="form-control" type="text" id="freqTrain" placeholder="Frequency">
+                </div>
+                                <button type="submit"  id ="addTrain">Submit</button>
+            </form>
+</div>
+</div>
+<!-- </div>class="btn btn-primary" -->
+
+
+
+
+
+<!-- <pre id="object"> </pre> -->
+
+
+
+   <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+              
+                <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+                <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+              
+                <!-- Add Firebase products that you want to use -->
+                <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-database.js"></script>
+                <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-firestore.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+<!-- <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script> -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+<script src="javascript.js"></script></body>
+</html>
+     <!-- https://firebase.google.com/docs/web/setup#config-web-app --> 
+
+<!-- <script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyC1tnCKzwDcTD2P2ECSP-4Z7QIZYRkKrWc",
+    authDomain: "train-ffd32.firebaseapp.com",
+    databaseURL: "https://train-ffd32.firebaseio.com",
+    projectId: "train-ffd32",
+    storageBucket: "",
+    messagingSenderId: "231483080100",
+    appId: "1:231483080100:web:fc270fdcb476a0b5"
+  };
+  // Initialize Firebase
+  firebase.init
+  
+
+    
+ 
