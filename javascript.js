@@ -1,14 +1,16 @@
 // (function(){
 
-const config = {
-  apiKey: "AIzaSyC1tnCKzwDcTD2P2ECSP-4Z7QIZYRkKrWc",
-  authDomain: "train-ffd32.firebaseapp.com",
-  databaseURL: "https://train-ffd32.firebaseio.com",
-  projectId: "train-ffd32",
-  storageBucket: "",
-  messagingSenderId: "231483080100",
-  appId: "1:231483080100:web:fc270fdcb476a0b5"
-};
+  var config = {
+    apiKey: "AIzaSyC1tnCKzwDcTD2P2ECSP-4Z7QIZYRkKrWc",
+    authDomain: "train-ffd32.firebaseapp.com",
+    databaseURL: "https://train-ffd32.firebaseio.com",
+    projectId: "train-ffd32",
+    storageBucket: "",
+    messagingSenderId: "231483080100",
+    appId: "1:231483080100:web:fc270fdcb476a0b5"
+  };
+  // Initialize Firebase
+ 
 firebase.initializeApp(config);
 
 //   const preObject = document.getElementById('object');
