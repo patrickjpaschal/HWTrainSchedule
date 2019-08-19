@@ -3,27 +3,41 @@ html {
 }
 body {
   background-color: #996666;
-  flex-direction: column;
-  display: flex;
+  /* flex-direction: column; */
+
 }
 #page-container {
   margin: auto;
   max-width: 80%;
   min-height: 100%;
+  /* flex-direction:column; */
 }
 .form-control {
   margin: 0px;
 }
+#addTrain{
+  background-color:#cccc99;
+  color:#666;
+  border-radius: 12%
+}
 #form-box {
   border: 1px #cc9966 solid;
   border-top-width: 35px;
+  /* display:flex; */
 }
 #table-box {
   border: 1px #cc9966 solid;
   border-top-width: 35px;
-  width: 90%;
+  width: 100%;
   justify-content: space-evenly;
   margin: 0px;
+  /* flex-wrap: wrap; */
+}
+.textInBorder{
+  margin-top:-35px;
+  color:rgba(128, 129, 105, 0.774);
+  font-weight: 400;
+
 }
 .jumbotron {
   color: #666666;
@@ -35,13 +49,11 @@ body {
 #local {
   font-family: sans-serif;
 }
-.contents {
-  display: flex;
- flex-direction:column;
-}
+
 #clock {
   background-color: rgb(204, 204, 156);
   height: 174px;
+  border-radius: 5%;
 }
 #lists {
   background-color: #cc9999;
@@ -54,4 +66,5 @@ body {
   justify-content: space-around;
   background-color: rgb(204, 204, 156);
   color: rgb(9, 9, 12);
+  border-radius: 2%;
 }
